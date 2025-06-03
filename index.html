@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Emery Photography | _the.indigo.child_</title>
+    <meta name="description" content="Explore the artistic photography of Nathan Emery, capturing nature, street scenes, and experimental photography from Wisconsin and beyond.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>_the.indigo.child_</h1>
+                <p class="tagline">1% Human 99% Microbe</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Nathan Emery</h2>
+            <p>Adventurist • Artist • Protagonist</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Wisconsin-based photographer capturing the world through a unique lens. My work explores the intersection of nature, street photography, and experimental techniques.</p>
+                    <p>With my Nikon D7200, I seek to reveal the extraordinary in the ordinary, finding beauty in unexpected places and moments that often go unnoticed.</p>
+                    <p>My photography is an extension of my philosophy: to explore, to question, and to see the world with fresh eyes every day.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="number">1052+</span>
+                        <span class="label">Photos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">1.1K+</span>
+                        <span class="label">Followers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="street">Street</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="experimental">Experimental</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Instagram feed will be loaded here via EmbedSocial -->
+                <div class="embedsocial-instagram" data-ref="instagram-feed-container"></div>
+            </div>
+            <div class="instagram-link">
+                <a href="https://www.instagram.com/_the.indigo.child_/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Follow on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Interested in collaborations, prints, or have questions about my work?</p>
+                    <p>Fill out the form or reach out directly through social media.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/_the.indigo.child_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Portrait Session">Portrait Session</option>
+                            <option value="Event Photography">Event Photography</option>
+                            <option value="Print Purchase">Print Purchase</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <!-- Honeypot field to prevent spam -->
+                    <div class="form-group" style="display:none;">
+                        <label for="_gotcha">Leave this field empty</label>
+                        <input type="text" name="_gotcha" id="_gotcha" tabindex="-1">
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>_the.indigo.child_</h3>
+                    <p class="tagline">1% Human 99% Microbe</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/_the.indigo.child_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2025</span> Nathan Emery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/form-handler.js" defer></script>
+    <script src="js/instagram-feed.js" defer></script>
+    <script>
+        // Set current year in copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
